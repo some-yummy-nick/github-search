@@ -13,3 +13,28 @@
 .search__block {
     flex-grow: 1;
 }
+
+.users__list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    margin-left: -20px;
+}
+
+.users__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: calc(100% / 5 - 20px);
+    text-align: center;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+.users__image {
+    max-width: 100%;
+    height: auto;
+}

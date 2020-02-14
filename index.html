@@ -14,7 +14,9 @@
     <div class="main">
         <div class="search__wrapper">
             <div class="search__block">
-                <ul class="users"></ul>
+                <div class="users">
+                    <ul class="users__list" id="js-users-list"></ul>
+                </div>
             </div>
             <div class="search__block">
                 <div class="user"></div>
@@ -23,8 +25,11 @@
     </div>
 </div>
 <script src="script.js"></script>
-<template id="js-users-item">
-    <li class="users__item"></li>
+<template id="js-user-template">
+    <li class="users__item">
+        <img class="users__image" src="" alt="">
+        <span class="users__login"></span>
+    </li>
 </template>
 </body>
 </html>
