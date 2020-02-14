@@ -7,9 +7,24 @@
 </head>
 <body>
 <div class="search">
-    <h1>Github search</h1>
+    <header class="search__header">
+        <h1>Github search</h1>
+        <input type="text" id="js-search-input">
+    </header>
+    <div class="main">
+        <div class="search__wrapper">
+            <div class="search__block">
+                <ul class="users"></ul>
+            </div>
+            <div class="search__block">
+                <div class="user"></div>
+            </div>
+        </div>
+    </div>
 </div>
-
 <script src="script.js"></script>
+<template id="js-users-item">
+    <li class="users__item"></li>
+</template>
 </body>
 </html>
