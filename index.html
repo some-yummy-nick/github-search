@@ -9,7 +9,8 @@
 <div class="search">
     <header class="search__header">
         <h1>Github search</h1>
-        <input type="text" id="js-search-input">
+        <input type="text" class="search__input" id="js-search-input">
+        <div class="search__message" id="js-search-message"></div>
     </header>
     <div class="main">
         <div class="search__wrapper">
@@ -19,17 +20,35 @@
                 </div>
             </div>
             <div class="search__block">
-                <div class="user"></div>
+                <div class="user" id="js-user">
+                    <img class="user__image" src="" alt="">
+                    <span class="user__login"></span>
+                    <div class="user__blocks" id="js-user-blocks"></div>
+                </div>
             </div>
         </div>
+        <button type="button" class="search__more" id="js-search-more">Загрузить еще</button>
+
     </div>
 </div>
-<script src="script.js"></script>
-<template id="js-user-template">
+
+<template id="js-users-template" class="js-users-template">
     <li class="users__item">
         <img class="users__image" src="" alt="">
         <span class="users__login"></span>
     </li>
 </template>
+<template id="js-block-template" class="js-block-template">
+    <div class="user__block">
+        <div class="user__title"></div>
+        <ul class="user__list"></ul>
+    </div>
+</template>
+<template id="js-list-template" class="js-block-template">
+ <li class="user__list-item">
+     <a class="user__list-link" href=""></a>
+ </li>
+</template>
+<script src="script.js" type="module"></script>
 </body>
 </html>
