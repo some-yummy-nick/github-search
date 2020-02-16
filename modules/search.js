@@ -61,7 +61,7 @@ export class Search {
 			let listItem = cloneList.querySelector(".user__list-item");
 			let listLink = listItem.querySelector("a");
 			listLink.textContent = item.login || item.name;
-			listLink.setAttribute("src", item.html_url);
+			listLink.setAttribute("href", item.html_url);
 			userList.appendChild(listItem);
 		});
 
