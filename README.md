@@ -1,3 +1,5 @@
+http://some-yummy-nick.github.io/github-search/
+
 Поиск по github api
 ![Screenshot](search-1.png)
 
